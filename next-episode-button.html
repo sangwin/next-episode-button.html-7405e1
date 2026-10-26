@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .btn-contain {
+            position: relative;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0px;
+            width: 0px;
+            height: 31px;
+            background-color: gray;
+            animation-name: linear;
+            animation-duration: 5s;
+            border-radius: 2px;
+        }
+
+        .underlay {
+            position: absolute;
+            top: 0px;
+            width: 200px;
+            height: 30px;
+            border: 1px solid gray;
+            display: flex;
+            text-align: center;
+            border-radius: 2px;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        @keyframes linear {
+            from {
+                width: 0px;
+            }
+
+            to {
+                width: 202px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="btn-contain">
+        <div class="overlay"></div>
+        <div class="underlay">Next Episode</div>
+    </div>
+</body>
+
+</html>
